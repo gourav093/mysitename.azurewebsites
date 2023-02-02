@@ -42,30 +42,24 @@
 			<!-- Side Notes / Related Information -->
 			<aside>
 <!-- STEP 4: Create a pair of FORM tags so that visitors can sign up for a newsletter -->
-        <div>
-      <form action="subscribe.php" method="get">
-      <label for="sign up">Sign up</label>
-      <input type="text" id="sign up" name="sign up"/>
-</div>
+
 <!-- STEP 5: Add an action attribute to the FORM start tag that points to a file called "subscribe.php", and set the method attribute to "get" -->
-          
+        <div>
+          <h3>Subscribe to Newsletter</h3> 
+          <form id="sign up for a newsletter" action="subscribe.php" method="get">  
+        </div>
 <!-- STEP 6: Add an H3 element inside the FORM tags that reads, "Subscribe to Newsletter" -->
-       <h3>"Subscribe to Newsletter"</h3>
-        <label for="subscribe to newsletter">Subscribe to Newsletter</label>
-        <input type="subscribe to newsletter" id="subscribe to newsletter" name="subscribe to newsletter"/>
-      </form>
 
 <!-- STEP 7a: Add a LABEL element for the email address -->
-          <label for="emailAddress" >Email</label>
-
-<!-- STEP 7b: Add an INPUT element for the user to type their email address - set the type of INPUT to "email", add a name attribute that is set to "emailAddress", and an id attribute that is set to "emailAddress" -->
-          <input type="text" id="emailAddress" required name="emailAddress"/>
-
+            <div>
+            <label for="emailAddress">E-mail Address</label>
+        
+<!-- STEP 7b: Add an INPUT element for the user to type their email address - set the type of INPUT to "email", add a name attribute that is set to "emailAddress", and an id attribute that is set to "emailAddress" -->           <input type="email" name=emailAddress id=emailAddress  required > <br/>
+            </div>
 <!-- STEP 7c: Add the 'for' attribute to the above LABEL element, and set the value to match the 'id' value of the INPUT element -->
 <!-- STEP 7d: Include the 'required' attribute on the above INPUT element so that users are forced to enter an email address before the form is submitted -->
 <!-- STEP 8a: Add a BUTTON element with the attribute type="submit" -->
-          <button type="submit">Subscribe</button>
-					
+					  <button type="submit">Subscribe</button>
 <!-- STEP 8b: Set the content of the BUTTON element to read, "Subscribe" -->
 <!-- STEP 8c: Upload the changed index.php file that you've now edited to the server and refresh the page to view the changes - try adding an email address and submitting the form -->
 <!-- STEP 9: Open up subscribe.php in your code editor and head to STEP 10 -->
